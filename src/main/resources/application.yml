@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: kotlin-spring-elasticsearch-demo
+
+elasticsearch:
+  http:
+    enabled: true
+    port: 7474
