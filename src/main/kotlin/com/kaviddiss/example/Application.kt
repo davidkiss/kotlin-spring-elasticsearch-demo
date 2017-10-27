@@ -1,6 +1,6 @@
 package com.kaviddiss.example
 
-import com.kaviddiss.example.service.GeoNameService
+import com.kaviddiss.example.service.GeoNameLoader
 import org.springframework.boot.CommandLineRunner
 import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
@@ -12,8 +12,8 @@ import org.springframework.context.annotation.Bean
 class Application: SpringBootServletInitializer() {
 
     @Bean
-    fun loadGeoNames(geoNameService: GeoNameService) = CommandLineRunner {
-        geoNameService.initElasticSearchDataset()
+    fun loadGeoNames(geoNameLoader: GeoNameLoader) = CommandLineRunner {
+        geoNameLoader.loadGeoNamesToElasticsearch()
     }
 
     override fun configure(application: SpringApplicationBuilder): SpringApplicationBuilder {
