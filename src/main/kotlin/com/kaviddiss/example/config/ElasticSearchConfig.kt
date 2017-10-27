@@ -51,7 +51,7 @@ class ElasticSearchConfig {
         val elasticsearchSettings = Settings.settingsBuilder()
                 .put("http.enabled", httpEnabled)
                 .put("http.port", httpPort)
-                .put("path.data", "target/data")
+                .put("path.data", "data")
                 .put("path.home", System.getProperty("user.dir"))
 
         return ElasticsearchTemplate(NodeBuilder()

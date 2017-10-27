@@ -9,7 +9,7 @@
     <packaging>war</packaging>
 
     <name>Kotlin Spring Elasticsearch demo</name>
-    <description>Image Search for rewards catalogues</description>
+    <description>Sample app that uses Kotling + Spring Boot + Spring Data ElasticSearch</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
